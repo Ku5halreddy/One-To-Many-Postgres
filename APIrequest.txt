@@ -1,0 +1,10 @@
+GET   : localhost:3000/graduates -> return all the graduates in the DB
+POST  : localhost:3000/graduates -> {"name" : "xyz"}
+PATCH : localhost:3000/graduates/1 -> {"name" : "xyz"} updates the graduate details with id 1
+DELETE: localhost:3000/graduates/1  -> deletes the graduate with id 1
+
+GET    : localhost:3000/graduates/1/offers -> returns details of the graduate with 1 and offers 
+POST   : localhost:3000/graduates/:id/offers -> { "title": "scientist" } -> add a new offer with graduate_id
+GET    : localhost:3000/graduates/:graduate_id/offers/:offerId ->
+PATCH  : localhost:3000/graduates/:graduate_id/offers/:offerId ->{"title":"data scientist"} updates the offer title
+DELETE : localhost:3000/graduates/:graduate_id/offers/:offerId -> deletes the offer with offerId
